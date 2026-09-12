@@ -12,6 +12,7 @@ venv/
 # Data (if you don't want raw/processed data pushed to GitHub)
 data/raw/*
 data/processed/*
+!data/processed/*.csv
 !data/raw/.gitkeep
 !data/processed/.gitkeep
  ~$*
