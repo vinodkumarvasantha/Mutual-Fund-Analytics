@@ -66,12 +66,39 @@ Then open the notebook and select **Run → Run All Cells**. This computes daily
 
 ```
 mutual-fund-analytics/
-├── data/raw/                      # 10 raw CSV files
-├── scripts/                       # Cleaned Python ETL scripts
-├── outputs/                       # Generated CSVs and charts
-├── Performance_Analytics.ipynb    # Main analytics notebook
-├── bluestock_mf_dashboard.pbix    # Power BI dashboard
-├── Final_Report.pdf               # Full capstone report
-├── Bluestock_MF_Presentation.pptx # 12-slide summary deck
+├── data/
+│   ├── raw/                        # 10 original CSV files
+│   └── processed/                  # 10 cleaned CSV files
+├── scripts/
+│   ├── data_inspection.py
+│   ├── fetch_live_nav.py
+│   ├── clean_nav_history.py
+│   ├── clean_investor_transactions.py
+│   ├── clean_scheme_performance.py
+│   ├── clean_remaining_tables.py
+│   ├── load_to_sqlite.py
+│   ├── run_pipeline.py
+│   ├── run_queries.py
+│   ├── recommender.py
+│   ├── schema.sql
+│   └── queries.sql
+├── outputs/                        # Generated CSVs and charts from analysis
+├── charts/                         # 15+ EDA chart PNGs
+├── dashboard/
+│   ├── Mutual_Fund_Dashboard.pbix
+│   └── Dashboard.pdf
+├── reports/
+│   ├── Final_Report.pdf
+│   └── data_quality_summary.txt
+├── Performance_Analytics.ipynb
+├── EDA_Analysis.ipynb
+├── Advanced_Analytics.ipynb
+├── bluestock_mf.db                 # SQLite database
+├── data_dictionary.md
+├── Bluestock_MF_Presentation.pptx
+├── Page1_IndustryOverview.png
+├── Page2_FundPerformance.png
+├── Page3_InvestorAnalytics.png
+├── Page4_SIPMarketTrends.png
 └── README.md
 ```
